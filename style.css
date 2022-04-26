@@ -22,7 +22,8 @@ span.visually-hidden {
     min-height: 40%;
     width: 40%;
 }
-
+body {  display: flex;
+    flex-direction: column;}
 body, head {
     background-image: url(background.png);
 }
@@ -65,16 +66,15 @@ body, head {
 }
 
 
-.but-eat{
+.but-eat, .but-soup, .but-pizza{
     display: flex;
     justify-content: center;
 }
 button.btn-rounded, button.btn-success, button.btn-warning {    /*кнопки пиццы суп выпечка */
-    margin-top:30px;
+    margin-top: 60px;
     width:240px;
     height:60px;
     float: left;
-    margin-left: 100px;
     text-align: center;
     font: 1.5em Mont Bold;
     border-radius: 50px;
@@ -105,6 +105,8 @@ button.btn-warning:hover {color: white;}
 
 /* Штука внизу с блоками */
 .block {
+    margin-top: 200px;
+    display:none;
     width:100%;
     display: flex;
     justify-content: center;
@@ -114,9 +116,43 @@ button.btn-warning:hover {color: white;}
     -webkit-transition: all 300ms;
     transition: 300ms;
 }
+.block-down2 {
+    display: none;
+    margin-top: -100px;
+    width:100%;
+    padding-top: 30px;
+
+    -moz-transition: all 300ms;
+    -webkit-transition: all 300ms;
+    transition: 300ms;
+} .block-down2.active {
+    margin-bottom: 60px;
+    display: block;
+    margin-top: 0px;
+    -moz-transition: all 300ms;
+    -webkit-transition: all 300ms;
+    transition: 300ms;
+}
+
+.block-down {
+    display: none;
+    margin-top: -200px;
+    width:100%;
+    padding-top: 30px;
+
+    -moz-transition: all 300ms;
+    -webkit-transition: all 300ms;
+    transition: 300ms;
+}.block-down.active {
+    display: block;
+    margin-top: 70px;
+    -moz-transition: all 300ms;
+    -webkit-transition: all 300ms;
+    transition: 300ms;
+}
 
 .block-down-pizza {
-    margin-top: -130px;
+    margin-top: -150px;
     width:100%;
     height: 10px;
     background-color:black;
@@ -127,19 +163,20 @@ button.btn-warning:hover {color: white;}
     transition: 300ms;
 }
 .block-down-pizza.active {
-    margin-top: 50px;
+    margin-top: 40px;
     width:100%;
     height: 15px;
     background-color:black;
 }
 
 .block.active {
+    margin-bottom:130px;
+    margin-top:200px;
     opacity: 100%;
     width:100%;
     display: flex;
     justify-content: center;
 }
-
 
 
 .pizza-menu {
@@ -233,7 +270,104 @@ button.btn-warning:hover {color: white;}
 .block-pizza.opacity {opacity: 100%;}
 .block-pizza.active {opacity: 0%;}
 
+
+.soup, .pizza, .peck  {
+    display: none;
+    margin-bottom: 30px;
+    opacity: 100%;
+}
+.soup.active, .pizza.active, .peck.active {
+    display: block !important;
+    margin:auto !important;
+    justify-content: center;
+
+    -moz-transition: all 300ms;
+    -webkit-transition: all 300ms;
+    transition: 300ms;
+}
+.soup.opacity, .pizza.opacity, .peck.opacity {opacity: 100%;}
+
+
+
 /* ВЫПЕЧКА */
+.option-product {
+    position: relative;
+    top:130px;
+    margin-right: 70px;
+    border-radius:30px;
+    width: 280px;
+    height: 130px;
+    background-color:rgb(255, 255, 255);
+}
+.option-product .price{
+    color:rgb(113, 191, 77);
+    font: 1.5em Mont Bold;
+    position: absolute;
+    bottom:-10px;
+    margin-left: 15px;
+}
+
+
+.bread .bread-menu {
+    margin: auto;
+    margin-top: 30px !important;
+    right:0;
+    margin-right: 70px;
+    border-radius:30px;
+    width: 280px;
+    height: 130px;
+    background-color:rgb(251, 129, 14);
+}
+.bread .bread-menu:nth-child(3), .bread .bread-menu:nth-child(6) {margin-right: 0px;}
+.bread-mp0 {
+    position: absolute;
+    top: 0;
+    right:0;
+    width:80px;
+    border-radius:30px;
+    height:35px;
+    background-color: white;
+}
+.bread-menu .bread-name {
+    position: relative;
+    float: left;
+    margin-top: 90px;
+    width:130px;
+    border-radius:30px;
+    height:40px;
+    background-color: white;
+    font: 1em Mont SemiBold;
+    text-align: center;
+    padding-top: 9px;
+}
+.bread-0 {
+    position: absolute;
+    top: 0;
+    right:0;
+    width:80px;
+    text-align: center;
+    font: 1.1em Mont Bold;
+    text-shadow: rgb(200, 106, 78) 0 0 8px;
+    padding-top:5px;
+}
+.bread-plus, .bread-minus {
+    cursor: pointer !important;
+    margin-top: 5px;
+    margin-left: 5px;
+    position: absolute;
+    float: right;
+    width:23px;
+    border-radius:50%;
+    height:23px;
+    background-color: rgb(224, 216, 206);
+    text-align: center;
+    color:black;
+    font: 1.2em Mont Bold;
+}
+.bread-plus {
+    margin-left: 0px !important;
+    margin-right: 5px !important;
+    right:0;}
 
 .bread-menu {
     opacity: 100%;
@@ -246,6 +380,13 @@ button.btn-warning:hover {color: white;}
     height: 130px;
     background-color:rgb(241, 194, 149);
 }
+.bread-menu[data-id="01"], .bread-menu[data-id="02"], .bread-menu[data-id="03"] {
+    background-color:rgb(183, 241, 149);
+}
+.bread-menu[data-id="04"], .bread-menu[data-id="05"], .bread-menu[data-id="06"] {
+    background-color:rgb(200, 230, 102);
+}
+
 
 .block-bread {
     position:absolute;
@@ -265,14 +406,29 @@ button.btn-warning:hover {color: white;}
 }
 
 /* ВЫБОР ПРЕДПРИЯТИЯ */
+#info .admin {
+    position: absolute;
+    float: left;
+    width: 600px;
+}
+#info .rayon {
+    position: absolute;
+    width: 600px;
+    margin-left:600px;
+}
+
 #info, #adress2 {
-    padding:40px;
-    height:300px;
+    position: relative;
+    padding:30px;
+    height:250px;
     width:1200px;
     border-radius: 30px;
     border: 5px solid rgb(31, 31, 31);
     margin: auto;
     margin-top:50px;
+}
+#adress2 {
+    margin-top: 500px;
 }
 #info p{
     font: 1.2em Mont SemiBold;
@@ -293,12 +449,25 @@ select.select2{
 }
 
 select.select3{
-    float: right;
-    margin-top: -10px;
+    float: left;
 }
 
 #adress2 {max-height:500px;}
-#adress-right {float:right;}
+
+.container.second {
+    width: 600px;
+    float:left;
+    top:120px;
+}
+button.btn-outline-success {
+    font: 1.2em Mont SemiBold;
+    position: absolute;
+    right:0;
+    bottom:0;
+    margin: 30px;
+    width: 300px;
+    margin-right: 90px;
+}
 
 
 
@@ -323,10 +492,16 @@ input.option {
 }
 
 
+.block-down-pizza .second, .block-down-pizza .third{
+    float:left;
+    position: absolute;
+}
 
 
 /* ФУТЕР */
 footer {
+    position: relative;
+    bottom: 0;
 	box-sizing: border-box;
 	max-height: 100%;
 	padding-bottom: 50px;
@@ -386,7 +561,7 @@ footer {
     opacity: 60%;
  }
 
-.price {
+.priceall {
     text-align: center;
     height:150px;
     width: 100%;
@@ -394,12 +569,133 @@ footer {
     border: 5px solid rgb(139, 130, 0);
     padding: auto;
 }
-.price p{
+.priceall p{
     font: 3.5em Mont Bold;
     color: white;
     padding: 25px;
     margin: auto;
 }
+/* Korzina */
+.win-korzina {
+    margin-left: -120px;
+    padding-left:10px;
+    position: fixed;
+    width: 180px;
+    height: 900px;
+    background-color: white;
+    bottom: 0;
+    border-radius:40px;
+    font: 1em Mont Bold;
+    color: white;
+}
+.win-korzina-back {position: fixed; height:150px; width: 100px; bottom:0; background-color: rgb(255, 255, 255);    margin-left: -440px;}
+.win-korzina button {margin:10px; position: absolute; bottom:0; margin-left:0px !important;}
+.win-korzina .element {
+    margin-right: 30px;
+    padding-top: 10px;
+    text-align: center;
+    font: 0.9em Mont Bold;
+    width: 70px;
+    height: 60px;
+    color: rgb(255, 0, 0);
+    margin-top: 5px;
+}
+.element p.price{
+    margin-bottom: 10px;
+    font: 1.2em Mont Bold;
+    color: rgb(43, 166, 55);
+}
+.win-korzina .number {
+    margin-right: 30px;
+    width: 70px;
+    height: 30px;
+    margin-top: 5px;}
+.win-korzina .number .pluser, .win-korzina .number .minuser {
+    position: absolute;
+    float:left;
+    padding:10px;
+    margin-top: 5px;
+    width:20px;
+    border-radius:50%;
+    height:20px;
+    background-color: rgb(224, 216, 206);
+    text-align: center;
+    color:black;
+    cursor: pointer;
+    padding:0;
+    font: 1em Mont Bold;
+}.win-korzina .number .pluser {right:0;}
+.pl-0-min .bread-0{
+    text-align: center;
+    margin:auto;
+    position: absolute;
+    margin-left:23px;
+    margin-top:2px;
+    font: 1.1em Mont Bold;
+    color:black;
+}
+.pl-0-min [data-action="number"] {
+    font: 1.1em Mont Bold;
+    color: rgb(39, 0, 0);
+    padding-left:25px !important;
+    top: -3px;
+}
+.pl-0-min [data-action="plus"] {
+    margin-left: 60px !important;
+}
+.pl-0-min {
+    position: relative;
+    width:60px;
+    height:30px;
+}
+.pl-0-min .bread-plus, .pl-0-min .bread-minus {
+    position: absolute;
+    float:left;
+    padding:10px;
+    margin-top: 5px;
+    width:20px;
+    border-radius:50%;
+    height:20px;
+    background-color: rgb(224, 216, 206);
+    text-align: center;
+    color:black;
+    cursor: pointer;
+    padding:0;
+    font: 1em Mont Bold;
+}
+.pl-0-min .bread-plus {right:-7px;}
+
+.number .line{
+    margin-top:5px;
+    height:2px;
+    width:100%;
+    background-color:rgb(200, 202, 188);
+}
+.win-korzina .number .pluser:hover, .win-korzina .number .minuser:hover, .bread-plus:hover, .bread-minus:hover {background-color: rgb(255, 227, 192); color:rgb(126, 103, 60);}
+.strelka {
+    position: relative;
+    margin-top:15px;
+    float:right;
+    font: 4.7em Mont Bold;
+    color: rgb(113, 113, 113);
+    margin-right: 20px;
+    cursor: pointer;
+}
+.win-korzina.active, .win-korzina-back.active {
+    position: fixed;
+    margin-left: 0px;
+}
+.option-product button {
+    font: 0.95em Mont Bold;
+    position: absolute;
+    width: 120px;
+    bottom:0;
+    right:0;
+    border-radius: 60px;
+}
+.option-product button:hover {color:rgb(169, 255, 169);}
+
+
 
 
 
@@ -409,12 +705,13 @@ footer {
      width: 50px;
      background-color:black;
  }
+ .line-footer:nth-child(1) {margin-top:-20px !important;}
  .line-footer {
     font: 0.95em Mont Light;
     margin-top:130px;
     width: 100%;
-    height: 3px;
-    background-color:rgb(51, 39, 90);
+    height: 5px;
+    background-color:rgb(29, 22, 53);
  }
 .line-footer p {
     padding-top:10px;
@@ -427,3 +724,7 @@ footer {
     margin-top:-50px;
 }
 .line-footer p:nth-child(1) {margin-left:20px;}
+
+label.text {
+    margin-bottom: 0px !important;
+}

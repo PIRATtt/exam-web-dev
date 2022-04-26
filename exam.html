@@ -43,7 +43,6 @@ socialPrivileges=1 ) чекбокс должен быть недоступным
             </ul>
             <form class="form-inline my-2 my-lg-0">
               <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Поиск">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
             </form>
           </div>
         </nav>
@@ -84,111 +83,227 @@ socialPrivileges=1 ) чекбокс должен быть недоступным
       </div>
       <div class="preimall">
         <div class="preim-first">
-          <div class="preim">
+          <div class="container-sm preim">
             <img src="price-tag.png">
             <div class="preim-text"><p>Вкусные цены</p></div>
           </div>
-          <div class="preim">
+          <div class="container-sm preim">
             <img src="bonus.png">
             <div class="preim-text"><p>Бонусы при каждом заказе</p></div>
           </div>
-          <div class="preim">
+          <div class="container-sm preim">
           <img src="25-percent.png">
             <div class="preim-text"><p>Кэшбек до 25%</p></div>
           </div>
         </div>
         <div class="preim-second">
-          <div class="preim">
+          <div class="container-sm preim">
             <img src="support.png">        
             <div class="preim-text"><p>Отзывчивая техподдержка</p></div>
           </div>
-          <div class="preim">
+          <div class="container-sm preim">
             <img src="mixing.png">
             <div class="preim-text"><p>Готовим из свежих продуктов</p></div>
           </div>
-          <div class="preim">
+          <div class="container-sm preim">
             <img src="laufen.png">
             <div class="preim-text"><p>Доставка за 30 мин</p></div>
           </div>
         </div> 
       </div>
+      <div class="line-footer"></div>
       <!--Меню-->
-      <div class="but-eat">
-        <button type="button" class="btn btn-primary btn-rounded">Пицца</button>
+      <!-- !!!НЕ ТРОГАТЬ -->
+      <div class="but-soup">
         <button type="button" class="btn btn-success">Супы</button>
-        <button type="button" class="btn btn-warning">Выпечка</button>
       </div>
-      <div class="block"><div class="back-pizza">
-        <!-- ВЫПЕЧКА -->
-        <div class="block-bread">
-          <div class="bread-menu"><div class="name-pizza-left">Шаурма</div><div class="num-right">0</div><div class="pizza-plus-3">+</div><div class="block-minus-3">-</div></div>
-          <div class="bread-menu"><div class="name-pizza-left">Самса</div><div class="num-right">0</div><div class="pizza-plus-3">+</div><div class="block-minus-3">-</div></div>
-          <div class="bread-menu"><div class="name-pizza-left">Пирожог</div><div class="num-right">0</div><div class="pizza-plus-3">+</div><div class="block-minus-3">-</div></div>
-          <div class="bread-menu"><div class="name-pizza-left">Кексик</div><div class="num-right">0</div><div class="pizza-plus-3">+</div><div class="block-minus-3">-</div></div>
+        <div class="container-sm bread soup">
+          <div class="container-sm bread-menu" data-id="01">
+            <div class="container-sm bread-name">Солянка</div>
+            <div class="container-sm">
+              <div class="bread-mp0">
+                <div class="container-sm bread-0" data-action="number" data-couter="">0</div>
+                <div class="container-sm bread-plus" data-action="plus">+</div><div class="container-sm bread-minus" data-action="minus">-</div>
+              </div>
+              <div class="container-sm option-product">
+                <p class="price">200р</p>
+                <button type="button" class="btn btn-info" data-click>В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="container-sm bread-menu" data-id="02">
+            <div class="container-sm bread-name">Борщ</div>
+            <div class="container-sm">
+              <div class="bread-mp0">
+                <div class="container-sm bread-0" data-action="number">0</div>
+                <div class="container-sm bread-plus" data-action="plus">+</div><div class="container-sm bread-minus" data-action="minus">-</div>
+              </div>
+              <div class="container-sm option-product">
+                <p class="price">250р</p>
+                <button type="button" class="btn btn-info" data-click>В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="container-sm bread-menu" data-id="03">
+            <div class="container-sm bread-name">Гороховый</div>
+            <div class="container-sm">
+              <div class="bread-mp0">
+                <div class="container-sm bread-0" data-action="number">0</div>
+                <div class="container-sm bread-plus" data-action="plus">+</div><div class="container-sm bread-minus" data-action="minus">-</div>
+              </div>
+              <div class="container-sm option-product">
+                <p class="price">250р</p>
+                <button type="button" class="btn btn-info" data-click>В корзину</button>
+              </div>
+            </div>
+          </div>
         </div>
-         <!-- СУПЫ -->
-         <div class="block-sup">
-          <div class="sup-menu"><div class="name-pizza-left">Борщ</div><div class="num-right">0</div><div class="pizza-plus-2">+</div><div class="block-minus-2">-</div></div>
-          <div class="sup-menu"><div class="name-pizza-left">Грибной</div><div class="num-right">0</div><div class="pizza-plus-2">+</div><div class="block-minus-2">-</div></div>
-          <div class="sup-menu"><div class="name-pizza-left">Гороховый</div><div class="num-right">0</div><div class="pizza-plus-2">+</div><div class="block-minus-2">-</div></div>
-          <div class="sup-menu"><div class="name-pizza-left">Овощной</div><div class="num-right">0</div><div class="pizza-plus-2">+</div><div class="block-minus-2">-</div></div>
+      <div class="container-sm block-down"></div> <!-- Первая линия-->
+      <div class="but-pizza">
+        <button type="button" class="btn btn-primary btn-rounded">Пицца</button>
+      </div>
+      <div class="container-sm bread pizza">
+        <div class="container-sm bread-menu" data-id="04">
+          <div class="container-sm bread-name">Пеперони</div>
+          <div class="container-sm">
+            <div class="bread-mp0">
+              <div class="container-sm bread-0" data-action="number">0</div>
+              <div class="container-sm bread-plus" data-action="plus">+</div><div class="container-sm bread-minus" data-action="minus">-</div>
+            </div>
+            <div class="container-sm option-product">
+              <p class="price">340р</p>
+              <button type="button" class="btn btn-info" data-click>В корзину</button>
+            </div>
+          </div>
         </div>
-        <!-- ПИЦЦА -->
-        
-        <div class="block-pizza">
-          <div class="pizza-menu"><div class="name-pizza-left">Русская</div><div class="num-right"><span class="number">0</span></div><div class="pizza-plus">+</div><div class="block-minus">-</div></div>
-          <div class="pizza-menu"><div class="name-pizza-left">Пеперони</div><div class="num-right"><span class="number">0</span></div><div class="pizza-plus">+</div><div class="block-minus">-</div></div>
-          <div class="pizza-menu"><div class="name-pizza-left">Филодельфия</div><div class="num-right"><span class="number">0</span></div><div class="pizza-plus">+</div><div class="block-minus">-</div></div>
-          <div class="pizza-menu"><div class="name-pizza-left">4 сыра</div><div class="num-right"><span class="number">0</span></div><div class="pizza-plus">+</div><div class="block-minus">-</div></div>
+        <div class="container-sm bread-menu" data-id="05">
+          <div class="container-sm bread-name">4 сыра</div>
+          <div class="container-sm">
+            <div class="bread-mp0">
+              <div class="container-sm bread-0" data-action="number">0</div>
+              <div class="container-sm bread-plus" data-action="plus">+</div><div class="container-sm bread-minus" data-action="minus">-</div>
+            </div>
+            <div class="container-sm option-product">
+              <p class="price">400р</p>
+              <button type="button" class="btn btn-info" data-click>В корзину</button>
+            </div>
+          </div>
         </div>
-      </div></div>
+        <div class="container-sm bread-menu" data-id="06">
+          <div class="container-sm bread-name">Маргарита</div>
+          <div class="container-sm">
+            <div class="bread-mp0">
+              <div class="container-sm bread-0" data-action="number">0</div>
+              <div class="container-sm bread-plus" data-action="plus">+</div><div class="container-sm bread-minus" data-action="minus">-</div>
+            </div>
+            <div class="container-sm option-product">
+              <p class="price">300р</p>
+              <button type="button" class="btn btn-info" data-click>В корзину</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-sm block-down2"></div>
       
-
-      <!-- дальнейшие вкладки после меню должны смещаться -->
-      <div class="block-down-pizza">
-        <p class="option">Выбор предприятия общественного питания</p>
-        <div class="container" id="info">
-          <p>Административный округ</p>
-          <select name="select">
-            <option>-не выбрано-</option>
-            <option>Москва</option>
-            <option>Московская область</option>
-          </select>
-          <div class="container" id="adrees-down">
-            <p class="adress-down">Тип</p>
-            <select class="select">
-              <option>-не выбрано-</option>
-              <option>Кафе</option>
-              <option>Ресторан</option>
-            </select>
-            <p class="adress-down2">Соц.скидки</p>
-            <select class="select2">
-              <option>-не выбрано-</option>
-              <option>123</option>
-              <option>321</option>
-            </select>
-          </div>
-          <div class="container" id="adress-right">
-            <p class="adress-right">Район</p>
-            <select class="select3">
-              <option>-не выбрано-</option>
-              <option>123</option>
-              <option>321</option>
-            </select>
-          </div>
+        <div class="but-eat">
+          <button type="button" class="btn btn-warning">Выпечка</button>
         </div>
-        <div class="container" id="adress2">
-
+        
+          <!-- ВЫПЕЧКА -->
+          <div class="container-sm bread peck" data-url="https://catfact.ninja/facts?limit=100">
+            <div class="container-sm bread-menu" data-id="07">
+              <div class="container-sm bread-name">Кексик</div>
+              <div class="container-sm">
+                <div class="bread-mp0">
+                  <div class="container-sm bread-0" data-action="number">0</div>
+                  <div class="container-sm bread-plus" data-action="plus">+</div><div class="container-sm bread-minus" data-action="minus">-</div>
+                </div>
+                <div class="container-sm option-product">
+                  <p class="price">80р</p>
+                  <button type="button" class="btn btn-info" data-click>В корзину</button>
+                </div>
+              </div>
+            </div>
+            <div class="container-sm bread-menu" data-id="08">
+              <div class="container-sm bread-name">Самса</div>
+              <div class="container-sm">
+                <div class="bread-mp0">
+                  <div class="container-sm bread-0" data-action="number">0</div>
+                  <div class="container-sm bread-plus" data-action="plus">+</div><div class="container-sm bread-minus" data-action="minus">-</div>
+                </div>
+                <div class="container-sm option-product">
+                  <p class="price">100р</p>
+                  <button type="button" class="btn btn-info" data-click>В корзину</button>
+                </div>
+              </div>
+            </div>
+            <div class="container-sm bread-menu" data-id="09">
+              <div class="container-sm bread-name">Булка</div>
+              <div class="container-sm">
+                <div class="bread-mp0">
+                  <div class="container-sm bread-0" data-action="number">0</div>
+                  <div class="container-sm bread-plus" data-action="plus">+</div><div class="container-sm bread-minus" data-action="minus">-</div>
+                </div>
+                <div class="container-sm option-product">
+                  <p class="price">100р</p>
+                  <button type="button" class="btn btn-info" data-click>В корзину</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block">
         </div>
-        <div class="line-footer"></div>
-        <p class="option">Дополнительные опции</p>
-        <label for="click" class="text"><p class="option2">Являюсь студентом ВУЗа</label>
-        <input type="checkbox" id="click" class="option">
-        <label for="click" class="text"><p class="option2">Быстрая доставка</label>
-        <input type="checkbox" id="click" class="option">
 
+        <!-- дальнейшие вкладки после меню должны смещаться -->
+        <div class="block-down-pizza">
+          <p class="option">Выбор предприятия общественного питания</p>
+          <div class="container" id="info">
+              <div class="container admin">
+                <p>Административный округ</p>
+                <select name="select">
+                  <option>-не выбрано-</option>
+                  <option>Москва</option>
+                  <option>Московская область</option>
+                </select>
+              </div>
+              <div class="container rayon">
+                <p>Район</p>
+                <select class="select3">
+                  <option>-не выбрано-</option>
+                  <option>123</option>
+                  <option>321</option>
+                </select>
+              </div>
 
-      </div>
+              <div class="container second" id="adrees-down">
+                <p class="adress-down">Тип</p>
+                <select class="select">
+                  <option>-не выбрано-</option>
+                  <option>Кафе</option>
+                  <option>Ресторан</option>
+                </select>
+                <p class="adress-down2">Соц.скидки</p>
+                <select class="select2">
+                  <option>-не выбрано-</option>
+                  <option>123</option>
+                  <option>321</option>
+                </select>
+              </div>
+              <button type="button" class="btn btn-outline-success">Найти</button>
+            </div>
+            
+          </div>
+          <div class="container" id="adress2">
+
+          </div>
+          <div class="line-footer"></div>
+          <p class="option">Дополнительные опции</p>
+          <label for="click" class="text"><p class="option2">Являюсь студентом ВУЗа</label>
+          <input type="checkbox" id="click" class="option">
+          <label for="click" class="text"><p class="option2">Быстрая доставка</label>
+          <input type="checkbox" id="click" class="option">
+        </div>
+
 
       <!-- Всплывающие окна -->
       <div class="window">
@@ -206,9 +321,12 @@ socialPrivileges=1 ) чекбокс должен быть недоступным
       </div>
       <div class="korzina"></div>
       <div class="line-footer"></div>
-      <div class="container price mt-5 mb-5">
+      <div class="container priceall mt-5 mb-5">
         <p>Итоговая цена:</p>
       </div>
+
+
+    
   <footer>
     <div class="oootext">ООО «КУШАЦ»</div>
     <div class="container" id="insta-vk"><a href="https://vk.com/feed"><img src="vk-social-network-logo.png"></a></div>
@@ -220,6 +338,14 @@ socialPrivileges=1 ) чекбокс должен быть недоступным
       <p>Пользовательское соглашение</p>
     </div>
   </footer>
+                  <!-- Корзина -->
+                  <div class="win-korzina-back"></div>
+                  <!-- Элементы -->
+                  <div class="container-sm win-korzina">
+                    <div class="strelka">></div>
+                    <!-- CODE JS -->
+                    <button class="btn btn-danger btn-sm">Оформить заказ</button>
+                  </div>
   <script src="main.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
