@@ -428,6 +428,7 @@ button.btn-warning:hover {color: white;}
     margin-top:50px;
 }
 #adress2 {
+    height:500px;
     margin-top: 500px;
 }
 #info p{
@@ -480,6 +481,8 @@ p.option {
     text-shadow: rgb(28, 34, 0) 0 0 10px;
 }
 p.option2 {
+    width: 400px;
+    height:30px;
     font: 1.3em Mont Bold;
     color: rgb(230, 230, 230);
     margin-left: 230px;
@@ -605,6 +608,44 @@ footer {
     font: 1.2em Mont Bold;
     color: rgb(43, 166, 55);
 }
+.zeroKorzina {
+    display: inline-block;
+    position: absolute;
+    margin-right: 70px;
+    padding-top: 20px;
+    text-align: center;
+    font: 1.2em Mont SemiBold;
+    color: rgb(202, 202, 153);
+    margin-top: 5px;
+}
+.zeroKorzina.none {
+    display: none;
+}
+.dostavka, .dostavka-free, .all-price, .summ, .rouble {
+    left:5px;
+    position: absolute;
+    float:left;
+    bottom:80px;
+    font: 1.2em Mont Bold;
+    color: rgb(176, 176, 176);
+} .dostavka-free {left:110px;color: rgb(43, 166, 55);}
+.dostavka-free.free {
+    color: rgb(195, 62, 62);
+}
+.all-price.active {
+    color: rgb(255, 53, 2);
+}
+.all-price{
+    color: rgb(176, 109, 99);
+    bottom:55px;
+} .summ, .rouble{
+    left:70px;color: rgb(43, 166, 55);
+    bottom:55px;
+}
+.summ.active {
+    color: rgb(210, 77, 10) !important;  
+}
+.rouble {left:115px;}
 .win-korzina .number {
     margin-right: 30px;
     width: 70px;
@@ -677,10 +718,24 @@ footer {
     margin-top:15px;
     float:right;
     font: 4.7em Mont Bold;
-    color: rgb(113, 113, 113);
+    color: rgb(112, 117, 65);
     margin-right: 20px;
     cursor: pointer;
 }
+.line-korzina {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    bottom:790px;
+    width: 100%;
+    height: 5px;
+    background-color:rgb(226, 225, 209);
+} .line-korzina.none {display: none;}
+.final-zakaz {
+    display: none;
+}
+.final-zakaz.none {display:inline-block;}
+
 .win-korzina.active, .win-korzina-back.active {
     position: fixed;
     margin-left: 0px;
@@ -727,4 +782,49 @@ footer {
 
 label.text {
     margin-bottom: 0px !important;
+}
+.option2 span {
+    color:rgb(255, 167, 95) !important;
+}
+
+
+/* JSON */
+.name, .type, .address, .doing{
+    text-align: center;
+    position: relative;
+    float:left;
+    width: 200px;
+    height: 50px;
+    font: 1.5em Mont Bold;
+    color:white;
+}
+.address, .doing {
+    width: 330px;
+}
+.line-json {
+    top:50px;
+    right: 35px;
+    position: relative;
+    height: 5px;
+    width: 1140px;
+    background-color: rgb(31, 31, 31);
+}
+.json {
+    width:1070px;
+    height:50px;
+}
+
+
+.name-element, .type-element, .address-element, .doing-element{
+    margin-top:20px;
+    text-align: center;
+    position: relative;
+    float:left;
+    width: 200px;
+    height: 50px;
+    font: 1.2em Mont Bold;
+    color:rgb(201, 201, 201);
+}
+.address-element, .doing-element {
+    width: 320px;
 }

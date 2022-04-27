@@ -17,7 +17,7 @@ socialPrivileges=1 ) чекбокс должен быть недоступным
 -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -122,7 +122,7 @@ socialPrivileges=1 ) чекбокс должен быть недоступным
             <div class="container-sm bread-name">Солянка</div>
             <div class="container-sm">
               <div class="bread-mp0">
-                <div class="container-sm bread-0" data-action="number" data-couter="">0</div>
+                <div class="container-sm bread-0" data-action="number" data-couter="">1</div>
                 <div class="container-sm bread-plus" data-action="plus">+</div><div class="container-sm bread-minus" data-action="minus">-</div>
               </div>
               <div class="container-sm option-product">
@@ -135,7 +135,7 @@ socialPrivileges=1 ) чекбокс должен быть недоступным
             <div class="container-sm bread-name">Борщ</div>
             <div class="container-sm">
               <div class="bread-mp0">
-                <div class="container-sm bread-0" data-action="number">0</div>
+                <div class="container-sm bread-0" data-action="number" data-couter="">1</div>
                 <div class="container-sm bread-plus" data-action="plus">+</div><div class="container-sm bread-minus" data-action="minus">-</div>
               </div>
               <div class="container-sm option-product">
@@ -148,7 +148,7 @@ socialPrivileges=1 ) чекбокс должен быть недоступным
             <div class="container-sm bread-name">Гороховый</div>
             <div class="container-sm">
               <div class="bread-mp0">
-                <div class="container-sm bread-0" data-action="number">0</div>
+                <div class="container-sm bread-0" data-action="number" data-couter="">1</div>
                 <div class="container-sm bread-plus" data-action="plus">+</div><div class="container-sm bread-minus" data-action="minus">-</div>
               </div>
               <div class="container-sm option-product">
@@ -167,7 +167,7 @@ socialPrivileges=1 ) чекбокс должен быть недоступным
           <div class="container-sm bread-name">Пеперони</div>
           <div class="container-sm">
             <div class="bread-mp0">
-              <div class="container-sm bread-0" data-action="number">0</div>
+              <div class="container-sm bread-0" data-action="number" data-couter="">1</div>
               <div class="container-sm bread-plus" data-action="plus">+</div><div class="container-sm bread-minus" data-action="minus">-</div>
             </div>
             <div class="container-sm option-product">
@@ -180,7 +180,7 @@ socialPrivileges=1 ) чекбокс должен быть недоступным
           <div class="container-sm bread-name">4 сыра</div>
           <div class="container-sm">
             <div class="bread-mp0">
-              <div class="container-sm bread-0" data-action="number">0</div>
+              <div class="container-sm bread-0" data-action="number" data-couter="">1</div>
               <div class="container-sm bread-plus" data-action="plus">+</div><div class="container-sm bread-minus" data-action="minus">-</div>
             </div>
             <div class="container-sm option-product">
@@ -193,7 +193,7 @@ socialPrivileges=1 ) чекбокс должен быть недоступным
           <div class="container-sm bread-name">Маргарита</div>
           <div class="container-sm">
             <div class="bread-mp0">
-              <div class="container-sm bread-0" data-action="number">0</div>
+              <div class="container-sm bread-0" data-action="number" data-couter="">1</div>
               <div class="container-sm bread-plus" data-action="plus">+</div><div class="container-sm bread-minus" data-action="minus">-</div>
             </div>
             <div class="container-sm option-product">
@@ -215,7 +215,7 @@ socialPrivileges=1 ) чекбокс должен быть недоступным
               <div class="container-sm bread-name">Кексик</div>
               <div class="container-sm">
                 <div class="bread-mp0">
-                  <div class="container-sm bread-0" data-action="number">0</div>
+                  <div class="container-sm bread-0" data-action="number" data-couter="">1</div>
                   <div class="container-sm bread-plus" data-action="plus">+</div><div class="container-sm bread-minus" data-action="minus">-</div>
                 </div>
                 <div class="container-sm option-product">
@@ -228,7 +228,7 @@ socialPrivileges=1 ) чекбокс должен быть недоступным
               <div class="container-sm bread-name">Самса</div>
               <div class="container-sm">
                 <div class="bread-mp0">
-                  <div class="container-sm bread-0" data-action="number">0</div>
+                  <div class="container-sm bread-0" data-action="number" data-couter="">1</div>
                   <div class="container-sm bread-plus" data-action="plus">+</div><div class="container-sm bread-minus" data-action="minus">-</div>
                 </div>
                 <div class="container-sm option-product">
@@ -241,7 +241,7 @@ socialPrivileges=1 ) чекбокс должен быть недоступным
               <div class="container-sm bread-name">Булка</div>
               <div class="container-sm">
                 <div class="bread-mp0">
-                  <div class="container-sm bread-0" data-action="number">0</div>
+                  <div class="container-sm bread-0" data-action="number" data-couter="">1</div>
                   <div class="container-sm bread-plus" data-action="plus">+</div><div class="container-sm bread-minus" data-action="minus">-</div>
                 </div>
                 <div class="container-sm option-product">
@@ -293,16 +293,28 @@ socialPrivileges=1 ) чекбокс должен быть недоступным
             </div>
             
           </div>
-          <div class="container" id="adress2">
+          <div class="container json" id="adress2">
+            <div class="name">Название</div>
+            <div class="type">Тип</div>
+            <div class="address">Адрес</div>
+            <div class="doing">Действие</div>
+            <div class="line-json"></div>
+            <!-- <div class="container json">
+              <div class="name-element">123</div>
+              <div class="type-element">123</div>
+              <div class="address-element">123</div>
+              <div class="doing-element">123</div>
+            </div> -->
+
 
           </div>
           <div class="line-footer"></div>
           <p class="option">Дополнительные опции</p>
           <label for="click" class="text"><p class="option2">Являюсь студентом ВУЗа</label>
-          <input type="checkbox" id="click" class="option">
-          <label for="click" class="text"><p class="option2">Быстрая доставка</label>
-          <input type="checkbox" id="click" class="option">
-        </div>
+          <input type="checkbox" id="click2" class="option">
+          <label for="click" class="text"><p class="option2"><span>Быстрая </span>доставка</label>
+          <input type="checkbox" id="click-fast" class="option">
+        </div></label>
 
 
       <!-- Всплывающие окна -->
@@ -342,9 +354,15 @@ socialPrivileges=1 ) чекбокс должен быть недоступным
                   <div class="win-korzina-back"></div>
                   <!-- Элементы -->
                   <div class="container-sm win-korzina">
+                    <div class="container-sm zeroKorzina" data-cart-empty="">Корзина пустая</div>
                     <div class="strelka">></div>
+                    <div class="line-korzina"></div>
                     <!-- CODE JS -->
-                    <button class="btn btn-danger btn-sm">Оформить заказ</button>
+                    <div class="final-zakaz">
+                      <div class="dostavka">Доставка:</div><div class="dostavka-free free">FREE</div>
+                      <div class="all-price">Цена:</div><span class="summ">0</span><span class="rouble">Р</span>
+                      <button class="btn btn-danger btn-sm">Оформить заказ</button>
+                    </div>
                   </div>
   <script src="main.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
